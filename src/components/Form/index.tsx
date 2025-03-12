@@ -7,61 +7,53 @@ interface FormState {
   email: string;
 }
 
-export default function Form(): JSX.Element {
-  const [firstName, setFirstName] = useState<string>("");
-  const [lastName, setLastName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
+export default function Form(): React.ReactNode {
+  // using single state object
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+  });
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
-
-    if (name === "firstName") {
-      setFirstName(value);
-    } else if (name === "lastName") {
-      setLastName(value);
-    } else {
-      setEmail(value);
-    }
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
-  const handleFormSubmit = (e: FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
-    alert(`Hello ${firstName} ${lastName} ${email}`);
-    setFirstName("");
-    setLastName("");
-    setEmail("");
+    console.log(formData);
   };
 
   return (
-    <div className="container text-center">
-      <h1>
-        Hello {firstName} {lastName} {email}
-      </h1>
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={firstName}
-          name="firstName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Email"
-        />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <form className="form" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="firstName"
+        value={formData.firstName}
+        onChange={handleInputChange}
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        name="lastName"
+        value={formData.lastName}
+        onChange={handleInputChange}
+        placeholder="Last Name"
+      />
+      <input
+        type="text"
+        name="email"
+        value={formData.email}
+        onChange={handleInputChange}
+        placeholder="Email"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    
   );
 }

@@ -1,20 +1,3 @@
-.container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-h1 {
-  color: #2c3e50;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -24,10 +7,10 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 500px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
-input {
+.form input {
   padding: 12px 16px;
   border: 2px solid #e2e8f0;
   border-radius: 6px;
@@ -37,17 +20,17 @@ input {
   box-sizing: border-box;
 }
 
-input:focus {
+.form input:focus {
   outline: none;
   border-color: #3498db;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
 
-input::placeholder {
+.form input::placeholder {
   color: #a0aec0;
 }
 
-button[type="submit"] {
+.form button[type="submit"] {
   background-color: #3498db;
   color: white;
   padding: 12px 24px;
@@ -60,12 +43,12 @@ button[type="submit"] {
   margin-top: 1rem;
 }
 
-button[type="submit"]:hover {
+.form button[type="submit"]:hover {
   background-color: #2980b9;
   transform: translateY(-1px);
 }
 
-button[type="submit"]:active {
+.form button[type="submit"]:active {
   transform: translateY(1px);
 }
 
@@ -73,13 +56,10 @@ button[type="submit"]:active {
 @media (max-width: 768px) {
   .form {
     padding: 1.5rem;
+    margin: 1rem;
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  input {
+  .form input {
     padding: 10px 14px;
   }
 }
@@ -101,15 +81,24 @@ button[type="submit"]:active {
 }
 
 /* Optional: Add validation styles */
-input:invalid {
+.form input:invalid {
   border-color: #e74c3c;
 }
 
-input:valid {
+.form input:valid {
   border-color: #2ecc71;
 }
 
-/* Optional: Add focus-within effect for the entire form */
-.form:focus-within {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/* Optional: Add error message styling */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Optional: Add disabled state for submit button */
+.form button[type="submit"]:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+  transform: none;
 }

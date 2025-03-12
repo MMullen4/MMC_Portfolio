@@ -1,12 +1,12 @@
 interface Project {
-    title: String;
-    description: String;
-    image: String;
-    repo: String;
-    deployed: String;
+    title: string;
+    description: string;
+    image: string;
+    repo: string;
+    deployed: string;
 }
 
-export default function Portfolio(): JSX.Element {
+export default function Portfolio(): React.ReactNode {
     const projects: Project[] = [
         {
             title: "Project 1",

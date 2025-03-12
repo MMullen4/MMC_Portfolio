@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import Form from './/components/Form';
+import Form from '../components/Form';
 
 interface ContactProps {
 

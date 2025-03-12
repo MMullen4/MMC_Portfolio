@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 
 interface AboutProps {}
 
-export default function About(): JSX.Element {
+import React from "react";
+
+export default function About(): React.ReactNode {
   return (
     <div>
       <h1>About Me</h1>
