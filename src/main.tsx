@@ -37,8 +37,9 @@ const router = createBrowserRouter([
   },
 ]);
 // type assertion for root element 
-const rootElement = document.getElementById('root');
-
-ReactDOM.createRoot(rootElement).render(
-  <RouterProvider router={router} />
+ReactDOM.createRoot (document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
+

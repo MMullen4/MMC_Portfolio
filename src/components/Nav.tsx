@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"; // import to allow nav to pages
 // import mmcLogo from '../assets/MMC.svg';//import logo
-import "../styles/nav.css";
+import "./styles/nav.css"
 
 interface LinkStyleType {
   border: string;
