@@ -14,9 +14,9 @@
     height: auto;
     border-radius: 8px;
     margin-bottom: 16px;
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 }
 
 .title {
@@ -29,5 +29,5 @@
 .divider {
     border-bottom: 1px solid #e0e0e0;
     margin: 16px 0;
-    width: 100%;
+    /* width: 100%; */
 }

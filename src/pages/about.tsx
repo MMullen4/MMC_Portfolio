@@ -1,9 +1,8 @@
-import {FC} from 'react'
+import { FC } from "react";
 import { Link } from "react-router-dom";
 
 const About: FC = () => {
-
-// export default function About(): React.ReactNode {
+  // export default function About(): React.ReactNode {
   return (
     <div>
       <h1>About Me</h1>
@@ -44,5 +43,5 @@ const About: FC = () => {
       </svg>
     </div>
   );
-}
+};
 export default About;

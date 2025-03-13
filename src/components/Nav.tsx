@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom"; // import to allow nav to pages
-// import mmcLogo from '../assets/MMC.svg';//import logo
-import "./styles/nav.css"
+import mmcLogo from "../assets/MMC.svg"; //import logo
+import "./styles/nav.css";
 
-interface LinkStyleType {
-  border: string;
-  padding: string;
-  margin: string;
-}
-interface SectionStyleType {
-  display: string;
-  fontFamily: string;
-  justifyContent: string;
-  alignItems: string;
-//   flexDirection: string;
+// interface LinkStyleType {
+//   border: string;
+//   padding: string;
+//   margin: string;
+// }
+// interface SectionStyleType {
+//   display: string;
+//   fontFamily: string;
+//   justifyContent: string;
+//   alignItems: string;
+  //   flexDirection: string;
   // padding: String;
   // margin: String;
-}
+// }
 export default function Nav() {
-  const linkStyle: LinkStyleType = {
+  const linkStyle = {
     border: "1px solid black",
     padding: "10px",
     margin: "10px",
   };
-  const sectionStyle: SectionStyleType = {
-    display: "flex",
-    fontFamily: "sans-serif",
-    justifyContent: "space-between",
-    alignItems: "center",
-    // flexDirection: "row",
-    // padding: '10px',
-    // margin: '10px'
-  };
+//   const sectionStyle: SectionStyleType = {
+//     display: "flex",
+//     fontFamily: "sans-serif",
+//     justifyContent: "space-between",
+//     alignItems: "center",
+//     flexDirection: "row",
+//     padding: "10px",
+//     margin: "10px",
+//   };
 
   return (
     <nav className="main-header-menu">
@@ -38,11 +38,20 @@ export default function Nav() {
       <a
         href="https://www.mullenconsulting.biz"
         target="_blank"
-        rel="noreferrer"
-      >
-        {/* <img src={mmcLogo} className='logo' alt='MMC Logo' /> */}
+        rel="noreferrer">
+        <img src={mmcLogo} className="logo" alt="MMC Logo" />
       </a>
-      <section style={sectionStyle}>
+      <section
+        style={{
+          display: "flex",
+          fontFamily: "helvetica",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+          flexDirection: "row",
+        //   padding: "10px",
+        //   margin: "10px",
+        }}
+      >
         <div style={linkStyle}>
           <Link to="/">About Me</Link>
         </div>
