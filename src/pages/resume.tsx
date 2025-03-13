@@ -8,9 +8,9 @@ export default function Resume(): React.ReactNode {
                 <h1>Resume</h1>
             </div>
             <iframe
-                src='./assests/images/MHM Res-1.pdf'
+                src='../../public/assets/images/MHM Res-1.pdf'
                 width='100%'
-                height="65px"
+                height="750px"
                 title="Resume PDF"
                 aria-label="Resume Document">
             </iframe>
