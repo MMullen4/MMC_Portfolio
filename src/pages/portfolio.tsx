@@ -8,49 +8,49 @@ interface Project {
 
 export default function Portfolio(): React.ReactNode {
     const projects: Project[] = [
-        {
-            title: "Project 1",
-            description: "This is a project",
-            image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            repo: "XXXXXXXXXXXXXXXXXX",
-            deployed: "XXXXXXXXXXXXXXXXXX"
-        },
-        {
-            title: "Project 2",
-            description: "This is a project",
-            image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            repo: "XXXXXXXXXXXXXXXXXX",
-            deployed: "XXXXXXXXXXXXXXXXXX"
-        },
-        {
-            title: "Project 3",
-            description: "This is a project",
-            image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            repo: "XXXXXXXXXXXXXXXXXX",
-            deployed: "XXXXXXXXXXXXXXXXXX"
-        },
-        {
-            title: "Project 4",
-            description: "This is a project",
-            image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            repo: "XXXXXXXXXXXXXXXXXX",
-            deployed: "XXXXXXXXXXXXXXXXXX"
-        },
-        {
-            title: "Project 5",
-            description: "This is a project",
-            image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            repo: "XXXXXXXXXXXXXXXXXX",
-            deployed: "XXXXXXXXXXXXXXXXXX"
-        },
-        {
-            title: "Project 6",
-            description: "This is a project",
-            image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            repo: "XXXXXXXXXXXXXXXXXX",
-            deployed: "XXXXXXXXXXXXXXXXXX"
-        }
-    ]
+      {
+        title: "Word Scramble",
+        description: "A puzzle game",
+        image: "../public/assets/images/word_scramble.png",
+        repo: "https://github.com/MMullen4/Word_Scramble",
+        deployed: "https://mmullen4.github.io/Word_Scramble/",
+      },
+      {
+        title: "Weather Dashboard",
+        description: "A weather app",
+        image: "../public/assets/images/Weather_Dashbd.png",
+        repo: "https://github.com/MMullen4/Weather_Dashboard",
+        deployed: "https://weather-dashboard-sm9k.onrender.com/",
+      },
+      {
+        title: "Project 3",
+        description: "This is a project",
+        image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        repo: "XXXXXXXXXXXXXXXXXX",
+        deployed: "XXXXXXXXXXXXXXXXXX",
+      },
+      {
+        title: "Project 4",
+        description: "This is a project",
+        image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        repo: "XXXXXXXXXXXXXXXXXX",
+        deployed: "XXXXXXXXXXXXXXXXXX",
+      },
+      {
+        title: "Project 5",
+        description: "This is a project",
+        image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        repo: "XXXXXXXXXXXXXXXXXX",
+        deployed: "XXXXXXXXXXXXXXXXXX",
+      },
+      {
+        title: "Project 6",
+        description: "This is a project",
+        image: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        repo: "XXXXXXXXXXXXXXXXXX",
+        deployed: "XXXXXXXXXXXXXXXXXX",
+      },
+    ];
 
     return (
         <div className="container">

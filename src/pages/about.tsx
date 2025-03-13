@@ -15,7 +15,7 @@ const About: FC = () => {
           alt="Matt Mullen pic"
         />
         <p>
-          With over 20 years in Paperboard manufacturing & sales to a wide array
+          About MMC Print & Packaging - With over 20 years in Paperboard manufacturing & sales to a wide array
           of printers, packagers, and various converters of paperboard, Matt
           brings his industry experience and knowledge to find solutions for
           clients that satisfy their need to expand and penetrate target
