@@ -1,6 +1,4 @@
-interface ResumeProps {
 
-}
 import React from 'react';
 
 export default function Resume(): React.ReactNode {
