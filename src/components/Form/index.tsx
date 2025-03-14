@@ -6,6 +6,7 @@ interface FormData {
   firstName: string;
   lastName: string;
   email: string;
+  message: string;
 }
 
 export default function Form(): JSX.Element {
@@ -13,6 +14,7 @@ export default function Form(): JSX.Element {
     firstName: "",
     lastName: "",
     email: "",
+    message: "",
   });
 
   // Add form validation state
@@ -35,11 +37,17 @@ export default function Form(): JSX.Element {
       newErrors.email = "Email is invalid";
     }
 
+    if (!formData.message.trim()) {
+      newErrors.message = "Please enter a message";
+    } else if (formData.message.length < 5) {
+      newErrors.message = "Message must be at least 5 characters long";
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -59,7 +67,7 @@ export default function Form(): JSX.Element {
         // Add your form submission logic here
         console.log(formData);
         // Reset form after successful submission
-        setFormData({ firstName: "", lastName: "", email: "" });
+        setFormData({ firstName: "", lastName: "", email: "", message: "" });
         setErrors({});
       } catch (error) {
         console.error("Form submission error:", error);
@@ -110,6 +118,21 @@ export default function Form(): JSX.Element {
           aria-label="Email"
         />
         {errors.email && <span className="error-message">{errors.email}</span>}
+      </div>
+
+      <div className="form-group">
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleInputChange}
+          placeholder="Your Message"
+          className={errors.message ? "error" : ""}
+          aria-label="Message"
+          rows={4}
+        />
+        {errors.message && (
+          <span className="error-message">{errors.message}</span>
+        )}
       </div>
 
       <button type="submit">Submit</button>
