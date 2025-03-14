@@ -6,9 +6,11 @@ A modern, responsive portfolio website built with React and TypeScript. This app
 
 ## Live Site
 
-Visit the live portfolio at: 
+Visit the live portfolio at: https://mmc4-portfolio.netlify.app/
 
 Github Site: https://github.com/MMullen4/MMC_Portfolio
+
+Screenshot : ![Alt text](<Screenshot 2025-03-14 at 11.17.07 AM.png>)
 
 
 ## Technologies Used
