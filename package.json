@@ -2,6 +2,7 @@
   "name": "mmc_portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "react": "^19.0.0",
