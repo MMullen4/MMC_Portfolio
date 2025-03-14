@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"; // import to allow nav to pages
 
 import "./styles/nav.css";
-const mmcLogo = "/public/assets/images/MMC.svg";
+const mmcLogo = "/assets/images/MMC.svg";
 
 export default function Nav() {
   const linkStyle = {
