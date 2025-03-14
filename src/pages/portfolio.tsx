@@ -11,14 +11,14 @@ export default function Portfolio(): React.ReactNode {
       {
         title: "Word Scramble",
         description: "A puzzle game",
-        image: "../public/assets/images/word_scramble.png",
+        image: "../assets/images/word_scramble.png",
         repo: "https://github.com/MMullen4/Word_Scramble",
         deployed: "https://mmullen4.github.io/Word_Scramble/",
       },
       {
         title: "Weather Dashboard",
         description: "A weather app",
-        image: "../public/assets/images/Weather_Dashbd.png",
+        image: "../assets/images/Weather_Dashbd.png",
         repo: "https://github.com/MMullen4/Weather_Dashboard",
         deployed: "https://weather-dashboard-sm9k.onrender.com/",
       },
