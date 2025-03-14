@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Personal Portfolio Website - MMC_Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+A modern, responsive portfolio website built with React and TypeScript. This application showcases my professional work, skills, and experience in web development.
 
-In the project directory, you can run:
+## Live Site
 
-### `npm start`
+Visit the live portfolio at: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Github Site: https://github.com/MMullen4/MMC_Portfolio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 18
+- TypeScript
+- React Router DOM
+- CSS3
+- Vite (Build tool)
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Responsive design that works on desktop and mobile devices
+- Dynamic routing with React Router
+- Portfolio project showcase
+- About Me section
+- Contact form
+- Downloadable resume
+- Interactive navigation
+- Clean and modern UI/UX
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository
 
-### `npm run eject`
+```bash
+git clone [your-repo-link]
+```
+2. Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm run dev
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+portfolio/
+├── src/
+│ ├── assets/ # Static files (images, icons)
+│ ├── components/ # React components
+│ ├── pages/ # Page components
+│ ├── styles/ # CSS files
+│ ├── App.tsx # Main application component
+│ └── main.tsx # Entry point
+├── public/ # Public assets
+├── index.html # HTML template
+├── package.json # Project dependencies
+├── tsconfig.json # TypeScript configuration
+└── vite.config.ts # Vite configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Browser Support
+Chrome (latest)
+Firefox (latest)
+Safari (latest)
+Edge (latest)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
-### Code Splitting
+## License
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
+Your Name
+Your Email
+Your LinkedIn
+Your GitHub
 
-### Analyzing the Bundle Size
+## Acknowledgments
+React Documentation
+TypeScript Documentation
+FSF Tutors and TA's
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
