@@ -35,8 +35,8 @@
    .card {
     width: 90%;
     margin: 10px auto;
-    padding: 0.5em;
-    font-size: 0.9em;
+    padding: 2.5em;
+    font-size: 2.9em;
   }
 
   p {
@@ -45,7 +45,7 @@
   }
 
   .imageContainer {
-    width: 90%;
+    width: 80%;
     padding: 15px;
   }
 }
@@ -53,7 +53,7 @@
 p {
   padding: auto;
   margin: auto;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -88,4 +88,32 @@ a {
   color: #acace3;
   text-decoration: inherit;
   border: 10px solid #454561;
+}
+
+.btn-repo {
+  background-color: #333;
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+  transition: background .3s;
+}
+
+.btn-deployed {
+  background-color: #F7951E;
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 5px;
+  border: none;
+  transition: background .3s;
+}
+.btn-repo:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.btn-deployed:hover {
+  background-color: #D4821F;
+  color: #fff;
 }

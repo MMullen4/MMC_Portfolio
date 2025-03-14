@@ -63,8 +63,8 @@ export default function Portfolio(): React.ReactNode {
                             <div className="card-body">
                                 <h5 className="card-title">{project.title}</h5>
                                 <p className="card-text">{project.description}</p>
-                                <a href={project.repo} className="btn btn-primary">Repo</a>
-                                <a href={project.deployed} className="btn btn-primary">Deployed</a>
+                                <a href={project.repo} className="btn btn-repo">Repo</a>
+                                <a href={project.deployed} className="btn btn-deployed">Deployed</a>
                             </div>
                         </div>
                     </div>
