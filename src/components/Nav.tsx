@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <nav className="main-header-menu">
-      <h1>MMC</h1>
+      <h1>MMC Print & Packaging</h1>
       <a
         href="https://www.mullenconsulting.biz"
         target="_blank"

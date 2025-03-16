@@ -6,8 +6,8 @@ const About: FC = () => {
   return (
     <div>
       <h1>About Me</h1>
-      <h1>Matt Mullen</h1>
-      <h2>Owner</h2>
+      <h1>Matt Mullen - Owner</h1>
+      {/* <h2>Owner</h2> */}
       <div className="card>">
         <img
           className="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
@@ -18,9 +18,8 @@ const About: FC = () => {
           About MMC Print & Packaging - With over 20 years in Paperboard
           manufacturing & sales to a wide array of printers, packagers, and
           various converters of paperboard, Matt brings his industry experience
-          and knowledge to find solutions for clients that satisfy their need to
-          expand and penetrate target markets. In his spare time, Matt enjoys
-          the outdoors with his family.
+          and knowledge to find solutions for clients that grow their brand. In
+          his spare time, Matt enjoys the outdoors with his family.
         </p>
       </div>
       <Link
