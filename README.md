@@ -8,8 +8,6 @@ A modern, responsive portfolio website built with React and TypeScript. This app
 
 Visit the live portfolio at: https://mmc4-portfolio.netlify.app/
 
-Github Site: https://github.com/MMullen4/MMC_Portfolio
-
 Screenshot : ![Alt text](<Screenshot 2025-03-14 at 11.17.07 AM.png>)
 
 
@@ -79,10 +77,9 @@ Edge (latest)
 MIT License
 
 ## Contact
-Your Name
-Your Email
-Your LinkedIn
-Your GitHub
+Matt Mullen
+mhmullen4@outlook.com
+Github Site: https://github.com/MMullen4/MMC_Portfolio
 
 ## Acknowledgments
 React Documentation
